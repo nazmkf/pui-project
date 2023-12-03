@@ -56,10 +56,10 @@ function chosenRecipe(){
 
 //attempt to change the dish image when the suprise recipe is changed//
 const recipeImages = {
-    '1': "../assets/dishsmall_01.png",
-    '2': "../assets/dishsmall_02.svg",
-    '3': "../assets/dishsmall_03.svg",
-    '4': "../assets/dishsmall_04.svg",
+    '1': "./assets/dishsmall_01.png",
+    '2': "./assets/dishsmall_02.svg",
+    '3': "./assets/dishsmall_03.svg",
+    '4': "./assets/dishsmall_04.svg",
 };
 
 
