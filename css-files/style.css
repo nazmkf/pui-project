@@ -8,6 +8,7 @@ body {
 main {
     width:100%;
 }
+
 /* hero div properties */
 .hero_section {
     margin:0px;
@@ -156,8 +157,8 @@ a {
     line-height: normal;
     margin-bottom: 5px;
 }
-.regular_black {
 
+.regular_black {
     color: rgb(0, 0, 0);
     font-family: "Barlow";
     font-size: 21px;
@@ -448,37 +449,159 @@ button {
 
 /* To make the page responsive for iPad Pro */
 /* image properties*/
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 430px) {
     .flexDiv {
         width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    text-align: center;
-    height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: center;
+        height: 100vh;
     }
 
     #background_01 {
-    z-index: -1;
-    margin:auto;
-    padding-left: 0px;
-    left:0px;
+        z-index: -1;
+        margin-left: -450px;
+        padding-left: 0px;
+        left: 0px;
+        height: 510%;
     }
 
     .dish {
-    padding-top: 100px;
+        padding-top: 251px;
+        height: 84%;
+        margin-left: 771px;
     }
 
     /*right text group properties*/
     .right_text {
-    padding-left: 285px;
-    padding-right: 150px;
-    padding-top: 100px;
-    text-align: center;
-
-    .left_images{
-        width: 100%;
+        padding-left: 763px;
+        padding-right: 150px;
+        padding-top: 350px;
+        text-align: left;
     }
 
+    .title {
+        color: rgba(123, 55, 2, 1);
+        font-family: "Capriola";
+        font-size: 145px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin:0px;
+    }
+
+    .brownSubtitle {
+        color: rgba(123, 55, 2, 1);
+        font-family: "Capriola";
+        font-size: 76px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 5px;
+        margin-bottom: 55px;
+    }
+
+    .subtitleQues_black {
+        color: rgb(0, 0, 0);
+        font-family: "Capriola";
+        font-size: 76px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 150px;
+        margin-bottom: 5px;
+    }
+
+    .special_black {
+        color: rgb(0, 0, 0);
+        font-family: "Barlow";
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: -3px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        color: rgb(255, 255, 255);
+        background: rgb(233, 91, 75);
+        border: none;
+        font-family: "Barlow";
+        font-size: 65px;
+        border-radius: 18px;
+        margin-top: 70px;
+        width: 600px;
+        height: 145px;
+    }
+
+    .newButton {
+        color: rgb(233, 91, 75);
+        background: transparent;
+        text-align: left;
+        align-items: start;
+        font-family: "Barlow";
+        font-size: 65px;
+        text-decoration: underline;
+    }
+
+
+    /* navbar components */
+    nav {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    
+    .nav_text {
+        width: 350px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #logo {
+        z-index: 1;
+        width: 465px;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    
+    .textActive{
+        font-size: 20px;
+        font-weight: 600px;
+        font-family: "Barlow";
+        position: relative;
+        padding-bottom: 8px;
+        border-bottom-style: solid;
+        border-bottom-width: 3.1px;
+        border-bottom-color: rgb(233, 91, 75);
+        width: fit-content;
+    }
+    
+    .textInactive {
+        font-size: 20px;
+        font-weight: 400px;
+        font-family: "Barlow";
+        text-align: center;
+    }
+
+    /* recipe and flipbook */
+    #recipe_book {
+        text-align: center;
+        display: grid;
+        justify-items: center;
+        color: rgb(0, 0, 0);
+        font-family: "Barlow";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 10px;
+        margin-top: 3500px;
     }
 }
