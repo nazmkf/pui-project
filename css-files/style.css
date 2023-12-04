@@ -116,6 +116,7 @@ a {
     font-weight: 400;
     line-height: normal;
     margin:0px;
+    text-align: left;
 }
 
 .brown {
@@ -257,12 +258,20 @@ hr{
     line-height: normal;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 
 #footer {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
 
 #footer .img {
@@ -273,7 +282,7 @@ hr{
 
 #footerText {
     position: absolute;
-    top: 26%; 
+    top: 3%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     color: #000000; 
@@ -281,7 +290,7 @@ hr{
     text-align: center;
     width: 100%;
     font-family: Barlow;
-    font-size: 21px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -411,7 +420,7 @@ transform: scaleX(1) scaleY(1);
     padding-right: 8px;
 }
 
-.about_cooks {
+#about_cooks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -575,6 +584,7 @@ transform: scaleX(1) scaleY(1);
         font-weight: 400;
         line-height: normal;
         margin:0px;
+        text-align: left;
     }
 
     .brownSubtitle {

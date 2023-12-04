@@ -2,7 +2,7 @@
 
 
 let reveal = {
-  duration: "1200",
+  duration: "2000",
   distance: "100%",
   opacity: "0"
 };
