@@ -80,7 +80,7 @@ a {
     margin: 0px;
 }
 
-.padding {
+#padding {
     padding-top: 60px;
 }
 
@@ -189,12 +189,12 @@ a {
 .special_black {
     color: rgb(0, 0, 0);
     font-family: "Barlow";
-    font-size: 21px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-top: -3px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .fancyTextSmall {
@@ -308,37 +308,87 @@ a .textInactive {
     text-align: center;
 }
 
-/* button {
-    color: rgb(255, 255, 255);
-    background: rgb(233, 91, 75);
-    border: none;
-    font-family: "Barlow";
-    font-size: 23px;
-    border-radius: 18px;
-    width: 242px;
-    height: 54.546px;
-    flex-shrink: 0;
-} */
-
-
-  
-.center {
-width: 180px;
-height: 60px;
-position: absolute;
-}
 
 .suprise {
-width: 180px;
-height: 60px;
-cursor: pointer;
-border-radius: 15px;
-background: rgb(233, 91, 75);
-border: 1px solid rgb(233, 91, 75);
-outline: none;
-transition: 1s ease-in-out;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(233, 91, 75);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
+.suprise:before {
+    content: '';
+    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #ff0088, #ffcc00, #ff9100, #e78bd3, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(25px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.suprise:active {
+    color: rgb(233, 91, 75)
+}
+
+.suprise:active:after {
+    background: transparent;
+}
+
+.suprise:hover:before {
+    opacity: 1;
+}
+
+.suprise:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgb(233, 91, 75);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Original Suprise Button */
+/* .suprise {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: rgb(233, 91, 75);
+    border: 1px solid rgb(233, 91, 75);
+    outline: none;
+    transition: 1s ease-in-out;
+}  */
+
+/* Old hover animation */
+/* .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    }
+    
 svg {
 position: absolute;
 left: 0;
@@ -348,7 +398,7 @@ stroke: #fff;
 border-radius: 15px;
 stroke-dasharray: 150 480;
 stroke-dashoffset: 150;
-transition: 1s ease-in-out;
+transition: .5s ease-in-out;
 }
 
 .suprise:hover {
@@ -369,7 +419,7 @@ font-weight: 100;
 .su:hover::before {
 opacity: 1;
 transform: scaleX(1) scaleY(1);
-}
+} */
 
 .newButton {
     width: 180px;
@@ -547,7 +597,7 @@ transform: scaleX(1) scaleY(1);
     }
 
 
-    .padding {
+    #padding {
         padding-top: 251px;
     }
 

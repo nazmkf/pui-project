@@ -38,6 +38,7 @@ function chosenRecipe(){
 
     let newQues = document.querySelector('.subtitleQues_black');
     newQues.textContent = recipeDescrip[t];
+    // newQues.classList.remove('subtitleQues_black');
     newQues.classList.add('regular_black');
 
     let newDescrip = document.querySelector('.special_black');
@@ -48,7 +49,7 @@ function chosenRecipe(){
     supriseMe.classList.remove('button');
     supriseMe.classList.add('newButton');
 
-    console.log("Recipe Index:", typeof(t));
+    console.log("Recipe Index:", typeof(t), t);
     let dishImage = document.querySelector('.dish');
     console.log(recipeImages[t])
     dishImage.src = recipeImages[t];
