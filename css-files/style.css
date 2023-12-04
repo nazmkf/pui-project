@@ -427,6 +427,7 @@ transform: scaleX(1) scaleY(1);
     width: 1223px;
     margin: 150px;
     padding-top: 370px;
+    z-index: +1;
 }
 
 .personal_text {
