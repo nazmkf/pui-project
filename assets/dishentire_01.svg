@@ -5,7 +5,7 @@
 <g filter="url(#filter1_d_277_207)">
 <circle cx="385" cy="381" r="347" fill="white"/>
 </g>
-<rect x="95.6113" y="91.6118" width="581.435" height="582.322" fill="url(#pattern0)"/>
+<rect x="95.6113" y="91.6113" width="581.435" height="582.322" fill="url(#pattern0)"/>
 <defs>
 <filter id="filter0_d_277_207" x="23" y="23" width="723.113" height="723.114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
