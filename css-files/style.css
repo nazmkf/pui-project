@@ -12,7 +12,7 @@ main {
 /* hero div properties */
 .hero_section {
     margin:0px;
-    width: 1450px;
+    width: 100%;
     display: flex;
     position: relative;
  } 
@@ -24,7 +24,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     z-index: 1;
-    width: 1450px;
+    width: 100%;
 }
 
 .nav_text {
@@ -37,7 +37,7 @@ nav {
 
 #logo {
     z-index: 1;
-    width: 465px;
+    width: 30%;
     margin-top: 10px;
     margin-left: 25px;
 }
@@ -370,56 +370,7 @@ a .textInactive {
     100% { background-position: 0 0; }
 }
 
-/* Original Suprise Button */
-/* .suprise {
-    width: 180px;
-    height: 60px;
-    cursor: pointer;
-    border-radius: 15px;
-    background: rgb(233, 91, 75);
-    border: 1px solid rgb(233, 91, 75);
-    outline: none;
-    transition: 1s ease-in-out;
-}  */
 
-/* Old hover animation */
-/* .center {
-    width: 180px;
-    height: 60px;
-    position: absolute;
-    }
-    
-svg {
-position: absolute;
-left: 0;
-top: 0;
-fill: none;
-stroke: #fff;
-border-radius: 15px;
-stroke-dasharray: 150 480;
-stroke-dashoffset: 150;
-transition: .5s ease-in-out;
-}
-
-.suprise:hover {
-transition: 1s ease-in-out;
-background: rgb(245, 226, 114)
-}
-
-.suprise:hover svg {
-stroke-dashoffset: -480;
-}
-
-.suprise span {
-color: white;
-font-size: 18px;
-font-weight: 100;
-}
-
-.su:hover::before {
-opacity: 1;
-transform: scaleX(1) scaleY(1);
-} */
 
 .newButton {
     width: 180px;
@@ -437,7 +388,7 @@ transform: scaleX(1) scaleY(1);
 
 /* recipe book properties */
 #recipe_book {
-    width: 1450px;
+    width: 100%;
     text-align: center;
     display: grid;
     justify-items: center;
@@ -474,7 +425,7 @@ transform: scaleX(1) scaleY(1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1223px;
+    width: 100%;
     margin: 150px;
     padding-top: 370px;
     z-index: +1;
@@ -578,6 +529,146 @@ transform: scaleX(1) scaleY(1);
 
 /* To make the page responsive for iPad Pro */
 /* image properties*/
+@media screen and (max-width: 1024px) {
+    
+    /* image properties*/
+    .flexDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+
+    #background_01 {
+        z-index: -1;
+        position: absolute;
+        margin-left: -600px;
+        width: 109%;
+        height: 210%;
+    }
+
+    #padding {
+        padding-top: 60px;
+    }
+
+    .dish {
+        height:100%;
+        /* width: 100%; */
+        margin:auto;
+        text-align: center;
+        -webkit-animation:spin 15s linear infinite;
+        -moz-animation:spin 15s linear infinite;
+        animation: spin 15s linear infinite;
+    }
+
+
+    @keyframes spin {
+        from { transform: rotate(0deg); 
+            transform-origin: center;
+        }
+        to { transform: rotate(360deg); 
+            transform-origin: center;}
+    }
+    
+    #recipe_book {
+        display: block;
+        color: rgb(0, 0, 0);
+        font-family: "Barlow";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 10px;
+        margin-top: -298px;
+       text-align: center;
+    }
+    
+    #about_cooks {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+        text-align: center;
+        padding-top: 195px;
+        padding-bottom: 65px;
+        width:100%;
+        z-index: +1;
+    }
+
+
+    /*right text group properties*/
+    .right_text {
+        padding-left:0px;
+        padding-right: 0px;
+        padding-top: 125px;
+        width: 60%;
+    }
+
+    .title {
+        color: rgba(123, 55, 2, 1);
+        font-family: "Capriola";
+        font-size: 73px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin:0px;
+        text-align: center;
+    }
+
+    .brown {
+        color: rgba(123, 55, 2, 1);
+        font-family: "Capriola";
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 5px;
+        margin-bottom: 55px;
+    }
+
+    .brownSubtitle {
+        color: rgba(123, 55, 2, 1);
+        font-family: "Capriola";
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 5px;
+        margin-bottom: 55px;
+    }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* To make the page responsive for iPad Pro */
+/* image properties*/
 @media screen and (max-width: 430px) {
     .flexDiv {
         width: 100%;
@@ -588,12 +679,19 @@ transform: scaleX(1) scaleY(1);
         height: 100vh;
     }
 
+    .left_images {
+        width: 100%;
+    }
+
+
+
     #background_01 {
-        z-index: -1;
+        /* z-index: -1;
         margin-left: -450px;
         padding-left: 0px;
         left: 0px;
-        height: 510%;
+        height: 510%; */
+        width: 430px;
     }
 
 
@@ -603,7 +701,7 @@ transform: scaleX(1) scaleY(1);
 
     .dish {
         height:100%;
-        margin-left: 771px;
+        /* margin-left: 771px; */
         -webkit-animation:spin 15s linear infinite;
         -moz-animation:spin 15s linear infinite;
         animation: spin 15s linear infinite;;
@@ -621,10 +719,11 @@ transform: scaleX(1) scaleY(1);
 
     /*right text group properties*/
     .right_text {
-        padding-left: 650px;
+        /* padding-left: 650px;
         padding-right: 150px;
-        padding-top: 350px;
-        text-align: left;
+        padding-top: 350px; */
+        /* text-align: left; */
+        width: 100%;
     }
 
     .title {
@@ -702,6 +801,7 @@ transform: scaleX(1) scaleY(1);
         flex-direction: row;
         justify-content: space-between;
         z-index: 1;
+        width:100%;
     }
     
     .nav_text {
