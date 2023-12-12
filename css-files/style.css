@@ -269,7 +269,7 @@ hr{
     left: 0;
     bottom: 0;
     width: 100%;
-    /* background-color: red; */
+    background-color: rgb(222, 184, 184);
     color: white;
     text-align: center;
 }
@@ -427,9 +427,9 @@ a .textInactive {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 150px;
-    padding-top: 370px;
-    padding-left: 120px;
+    padding-top: 533px;
+    padding-bottom: 180px;
+    padding-left: 86px;
     z-index: +1;
 }
 
