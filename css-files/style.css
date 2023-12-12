@@ -315,7 +315,7 @@ a .textInactive {
     border-color: azure;
     outline: none;
     color: #ffffff;
-    background: rgb(170, 65, 53);
+    background: rgb(206 79 65);
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -341,7 +341,7 @@ a .textInactive {
 }
 
 .suprise:active {
-    color: rgb(233, 91, 75)
+    color: rgb(206 79 65);
 }
 
 .suprise:active:after {
@@ -358,7 +358,7 @@ a .textInactive {
     position: absolute;
     width: 100%;
     height: 100%;
-    background:rgb(233, 91, 75);
+    background:rgb(206 79 65);
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -378,7 +378,7 @@ a .textInactive {
     cursor: pointer;
     border-radius: 15px;
     background: transparent;
-    color:rgb(233, 91, 75);
+    color:rgb(206 79 65);
     border: 1px solid;
     outline: none;
     transition: 1s ease-in-out;
