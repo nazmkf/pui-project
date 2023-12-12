@@ -28,11 +28,12 @@ nav {
 }
 
 .nav_text {
-    width: 350px;
+    width: 259px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 45px;
 }
 
 #logo {
@@ -324,7 +325,6 @@ a .textInactive {
 
 .suprise:before {
     content: '';
-    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #ff0088, #ffcc00, #ff9100, #e78bd3, #ff0000);
     position: absolute;
     top: -2px;
@@ -342,6 +342,7 @@ a .textInactive {
 
 .suprise:active {
     color: rgb(206 79 65);
+    color: #ffffff;
 }
 
 .suprise:active:after {
@@ -358,6 +359,7 @@ a .textInactive {
     position: absolute;
     width: 100%;
     height: 100%;
+    color: #ffffff;
     background:rgb(206 79 65);
     left: 0;
     top: 0;
@@ -373,12 +375,12 @@ a .textInactive {
 
 
 .newButton {
-    width: 180px;
-    height: 60px;
+    width: 220px;
+    height: 50px;
     cursor: pointer;
     border-radius: 15px;
     background: transparent;
-    color:rgb(206 79 65);
+    color: #ffffff;
     border: 1px solid;
     outline: none;
     transition: 1s ease-in-out;
@@ -427,7 +429,7 @@ a .textInactive {
     width: 100%;
     padding-top: 533px;
     padding-bottom: 180px;
-    padding-left: 86px;
+    padding-left: 74px;
     z-index: +1;
 }
 
