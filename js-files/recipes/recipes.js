@@ -1,7 +1,4 @@
 
-
-
-
 function getRandomInt(max){
     return r = Math.floor(Math.random()*max);
 }
@@ -13,11 +10,7 @@ console.log(randomRecipe);
 let supriseMe = document.querySelector('.suprise');
 supriseMe.addEventListener("click", chosenRecipe);
 
-// let newButtonFunc = document.querySelector('.newButton');
-// newButtonFunc.addEventListener("click", chosenRecipe);
-
 function chosenRecipe(){
-
     let t = getRandomInt(4) + 1;    
     let newTitle = document.querySelector('.title');
     newTitle.textContent = recipeTitle[t];
@@ -25,20 +18,8 @@ function chosenRecipe(){
     let newSubtitle = document.querySelector('.brownSubtitle');
     newSubtitle.textContent = 'is todays chosen recipe';
 
-    
-        // // Create a new span for the additional text
-        // let additionalText = document.createElement('span');
-        // additionalText.textContent = ' Want to see another recipe?';
-    
-        // // Append space between description and additional text
-        // newDescrip.appendChild(document.createTextNode(' '));
-    
-        // // Append additional text to the description
-        // newDescrip.appendChild(additionalText);
-
     let newQues = document.querySelector('.subtitleQues_black');
     newQues.textContent = recipeDescrip[t];
-    // newQues.classList.remove('subtitleQues_black');
     newQues.classList.add('regular_black');
 
     let newDescrip = document.querySelector('.special_black');
@@ -148,21 +129,6 @@ const ingredients = {
     ]
   };
 
-
-// let j = 0;
-// let ingredientContent = document.querySelectorAll('.ingredients');
-
-// for (i in ingredients) {
-//     // console.log(ingredients[i])
-//     var content = document.createElement('p');
-//     content = ingredients[i];
-//     console.log(content);
-//     ingredientContent[j].textContent = content;
-//     j++;
-// }
-
-
-
 const prep = {
 "cake": [
     "• Wash the toor dal and add 2 cups of water and turmeric powder. Pressure cook in your preferred way. Let the dal cool and mash it nicely.",
@@ -200,22 +166,6 @@ const prep = {
 ]
 };
   
-
-//   let k = 0;
-//   let prepContent = document.querySelectorAll('.ingredients');
-
-//   for (i in ingredients) {
-//     // console.log(ingredients[i])
-//     var content = document.createElement('p');
-//     content = ingredients[i];
-//     console.log(content);
-//     ingredientContent[j].textContent = content;
-//     j++;
-// }
-
-
-
-
 
 const description = {
     "cake": [
