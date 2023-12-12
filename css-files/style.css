@@ -296,7 +296,7 @@ hr{
     line-height: normal;
 }
 
-a {
+#email_link{
     text-decoration: underline;
     color: rgb(233, 91, 75);
 }
