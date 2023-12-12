@@ -314,8 +314,8 @@ a .textInactive {
     height: 50px;
     border-color: azure;
     outline: none;
-    color: #fff;
-    font-weight: 800px;
+    color: #ffffff;
+    font-weight: bolder;
     background: rgb(233, 91, 75);
     cursor: pointer;
     position: relative;
