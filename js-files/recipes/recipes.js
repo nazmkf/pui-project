@@ -57,10 +57,10 @@ function chosenRecipe(){
 
 //attempt to change the dish image when the suprise recipe is changed//
 const recipeImages = {
-    '1': "./assets/dishentire_01.svg",
-    '2': "./assets/dishentire_02.svg",
-    '3': "./assets/dishentire_03.svg",
-    '4': "./assets/dishentire_04.svg",
+    '1': "./assets/main_dishes/dishentire_01.svg",
+    '2': "./assets/main_dishes/dishentire_02.svg",
+    '3': "./assets/main_dishes/dishentire_03.svg",
+    '4': "./assets/main_dishes/dishentire_04.svg",
 };
 
 
@@ -100,22 +100,6 @@ const recipeTitle = {
       "Surmai Fish Kadi"
     ]
   };
-
-// let n = 0;
-// let headingContent = document.querySelectorAll('.heading');
-// console.log()
-
-// for (i in recipeTitle) {
-//     console.log(i);
-//     console.log(n);
-//     var content = document.createElement('p');
-//     content = recipeTitle[i];
-//     console.log(content);
-//     headingContent[n].textContent = content;
-//     n++;
-// }
-
-
 
 
 

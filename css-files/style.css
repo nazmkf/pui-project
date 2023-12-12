@@ -412,8 +412,9 @@ a .textInactive {
 }
 
 .flip_arrows {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
 }
 
 .arrow_icon {
@@ -428,6 +429,7 @@ a .textInactive {
     width: 100%;
     margin: 150px;
     padding-top: 370px;
+    padding-left: 120px;
     z-index: +1;
 }
 
@@ -592,6 +594,7 @@ a .textInactive {
         text-align: center;
         padding-top: 195px;
         padding-bottom: 65px;
+        padding-left: 0px;
         width:100%;
         z-index: +1;
     }
@@ -608,7 +611,7 @@ a .textInactive {
     .title {
         color: rgba(123, 55, 2, 1);
         font-family: "Capriola";
-        font-size: 73px;
+        font-size: 50px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -637,219 +640,10 @@ a .textInactive {
         margin-top: 5px;
         margin-bottom: 55px;
     }
+
+    .light_black {
+        text-align: center;
+    }
  
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* To make the page responsive for iPad Pro */
-/* image properties*/
-@media screen and (max-width: 430px) {
-    .flexDiv {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-        text-align: center;
-        height: 100vh;
-    }
-
-    .left_images {
-        width: 100%;
-    }
-
-
-
-    #background_01 {
-        /* z-index: -1;
-        margin-left: -450px;
-        padding-left: 0px;
-        left: 0px;
-        height: 510%; */
-        width: 430px;
-    }
-
-
-    #padding {
-        padding-top: 251px;
-    }
-
-    .dish {
-        height:100%;
-        /* margin-left: 771px; */
-        -webkit-animation:spin 15s linear infinite;
-        -moz-animation:spin 15s linear infinite;
-        animation: spin 15s linear infinite;;
-    }
-    
-    @keyframes spin {
-        from { transform: rotate(0deg); 
-            transform-origin: center;
-        }
-        to { transform: rotate(360deg); 
-            transform-origin: center;}
-    }
-    
-       
-
-    /*right text group properties*/
-    .right_text {
-        /* padding-left: 650px;
-        padding-right: 150px;
-        padding-top: 350px; */
-        /* text-align: left; */
-        width: 100%;
-    }
-
-    .title {
-        color: rgba(123, 55, 2, 1);
-        font-family: "Capriola";
-        font-size: 113px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin:0px;
-        text-align: left;
-    }
-
-    .brownSubtitle {
-        color: rgba(123, 55, 2, 1);
-        font-family: "Capriola";
-        font-size: 51px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 146%;
-        margin-top: 5px;
-        margin-bottom: 55px;
-    }
-
-    .subtitleQues_black {
-        color: rgb(0, 0, 0);
-        font-family: "Capriola";
-        font-size: 61px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 136%;
-        margin-top: 150px;
-        margin-bottom: 5px;
-    }
-
-    .special_black {
-        color: rgb(0, 0, 0);
-        font-family: "Barlow";
-        font-size: 51px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-top: -3px;
-        margin-bottom: 15px;
-    }
-
-.suprise {
-        color: rgb(255, 255, 255);
-        background: rgb(233, 91, 75);
-        border: none;
-        font-family: "Barlow";
-        font-size: 65px;
-        border-radius: 18px;
-        margin-top: 70px;
-        width: 600px;
-        height: 145px;
-        align-items: center;
-    }
-
-    .newButton {
-        color: rgb(233, 91, 75);
-        background: transparent;
-        text-align: left;
-        align-items: start;
-        font-family: "Barlow";
-        font-size: 65px;
-        text-decoration: underline;
-    }
-
-
-    /* navbar components */
-    nav {
-        display: flex;
-        position: fixed;
-        flex-direction: row;
-        justify-content: space-between;
-        z-index: 1;
-        width:100%;
-    }
-    
-    .nav_text {
-        width: 350px;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    #logo {
-        z-index: 1;
-        width: 465px;
-        margin-top: 10px;
-        margin-left: 25px;
-    }
-    
-    .textActive{
-        font-size: 20px;
-        font-weight: 600px;
-        font-family: "Barlow";
-        position: relative;
-        padding-bottom: 8px;
-        border-bottom-style: solid;
-        border-bottom-width: 3.1px;
-        border-bottom-color: rgb(233, 91, 75);
-        width: fit-content;
-    }
-    
-    .textInactive {
-        font-size: 20px;
-        font-weight: 400px;
-        font-family: "Barlow";
-        text-align: center;
-    }
-
-    /* recipe and flipbook */
-    #recipe_book {
-        text-align: center;
-        display: grid;
-        justify-items: center;
-        color: rgb(0, 0, 0);
-        font-family: "Barlow";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        margin-bottom: 10px;
-        margin-top: 3500px;
-    }
-}
