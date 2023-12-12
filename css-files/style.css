@@ -315,7 +315,8 @@ a .textInactive {
     height: 50px;
     border-color: azure;
     outline: none;
-    color: #ffffff;
+    color: #000000;
+    font-weight: 1200px;
     background: rgb(206 79 65);
     cursor: pointer;
     position: relative;
