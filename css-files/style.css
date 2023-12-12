@@ -427,7 +427,6 @@ a .textInactive {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
     padding-top: 533px;
     padding-bottom: 180px;
     padding-left: 74px;
